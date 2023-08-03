@@ -1,27 +1,30 @@
-using System;
+class Word{
 
-string word = "Able was I ere I saw elba.";
+    public static Dictionary<string, int> GetWordFrequency()
+{
 
-Console.WriteLine(PalindromeCheck.Check(word));
+    string input = Console.ReadLine();
+    // Split the input string into an array of words
+    string[] words = input.Split(new char[] { ' ', '.', ',', ';', ':', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
-class PalindromeCheck {
-    static String RemovePunctuation(String word) {
-        return String.Concat(word.Where(c => !char.IsPunctuation(c) && c.ToString() != " ").ToArray());
-    }
-    public static bool Check(string word) {
-        String finale = RemovePunctuation(word).ToLower();
+    // Create a dictionary to store the frequency of each word
+    Dictionary<string, int> frequency = new Dictionary<string, int>();
 
-        int left = 0;
-        int right = finale.Length - 1;
-
-        while (left < right) {
-            if (finale[left] != finale[right])
-                return false;
-
-            left += 1;
-            right -= 1;
+    // Loop through each word and update the frequency dictionary
+    foreach (string word in words)
+    {
+        if (frequency.ContainsKey(word))
+        {
+            frequency[word]++;
         }
-
-        return true;
+        else
+        {
+            frequency[word] = 1;
+        }
     }
+
+    // Return the frequency dictionary
+    return frequency;
+
+}
 }

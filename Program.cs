@@ -1,20 +1,26 @@
-﻿class Palindrome{
+﻿class Program{
+
     static void Main(string[] args){
 
-        Console.WriteLine(Palindrome_Checker("Abebe"));
-    }
+        //checking the palindrome function
+        Palindrome palindrome = new Palindrome();
+        Console.WriteLine(palindrome.isPalindrome("racecar"));
+        Console.WriteLine(palindrome.isPalindrome("hello"));
+        Console.WriteLine(palindrome.isPalindrome("madam"));
 
-    static bool Palindrome_Checker(string word){
-        int left = 0 ;
-        int right = word.Length - 1;
-
-        while (word[left] == word[right] && left < right){
-
-            left += 1;
-            right -= 1;
-
+        //checking the word frequency function
+        Dictionary<string, int> frequency = Word.GetWordFrequency();
+        foreach (KeyValuePair<string, int> pair in frequency)
+        {
+            Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
         }
 
-        return left == right;
 
-    }}
+    Student.StudentGrade();
+    
+    }
+
+    //checking the student grade function
+
+
+}
