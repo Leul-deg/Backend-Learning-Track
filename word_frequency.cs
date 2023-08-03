@@ -1,30 +1,21 @@
-class Word{
+class Word {
+    public static Dictionary<string, int> GetWordFrequency(string text) {
+        Dictionary<string, int> frequency = new Dictionary<string, int>();
 
-    public static Dictionary<string, int> GetWordFrequency()
-{
+        if (text != null) {
+            string[] words = text.Split(' ');
 
-    string input = Console.ReadLine();
-    // Split the input string into an array of words
-    string[] words = input.Split(new char[] { ' ', '.', ',', ';', ':', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
-
-    // Create a dictionary to store the frequency of each word
-    Dictionary<string, int> frequency = new Dictionary<string, int>();
-
-    // Loop through each word and update the frequency dictionary
-    foreach (string word in words)
-    {
-        if (frequency.ContainsKey(word))
-        {
-            frequency[word]++;
+            foreach (string word in words) {
+                if (!string.IsNullOrEmpty(word)) {
+                    if (frequency.ContainsKey(word)) {
+                        frequency[word]++;
+                    } else {
+                        frequency[word] = 1;
+                    }
+                }
+            }
         }
-        else
-        {
-            frequency[word] = 1;
-        }
+
+        return frequency;
     }
-
-    // Return the frequency dictionary
-    return frequency;
-
-}
 }
