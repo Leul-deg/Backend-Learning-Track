@@ -1,10 +1,7 @@
 class Palindrome{
-    static void Main(string[] args){
 
-        Console.WriteLine(Palindrome_Checker("Abebe"));
-    }
-
-    static bool Palindrome_Checker(string word){
+    public bool isPalindrome(string word){
+        
         int left = 0 ;
         int right = word.Length - 1;
 
@@ -16,5 +13,6 @@ class Palindrome{
         }
 
         return left == right;
+    }
 
-    }}
+}
