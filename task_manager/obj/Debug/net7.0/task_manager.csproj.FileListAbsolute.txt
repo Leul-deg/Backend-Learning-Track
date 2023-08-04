@@ -1,0 +1,15 @@
+C:\Users\pc\Documents\demo\task_manager\bin\Debug\net7.0\task_manager.exe
+C:\Users\pc\Documents\demo\task_manager\bin\Debug\net7.0\task_manager.deps.json
+C:\Users\pc\Documents\demo\task_manager\bin\Debug\net7.0\task_manager.runtimeconfig.json
+C:\Users\pc\Documents\demo\task_manager\bin\Debug\net7.0\task_manager.dll
+C:\Users\pc\Documents\demo\task_manager\bin\Debug\net7.0\task_manager.pdb
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.AssemblyInfo.cs
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.dll
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\refint\task_manager.dll
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.pdb
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\task_manager.genruntimeconfig.cache
+C:\Users\pc\Documents\demo\task_manager\obj\Debug\net7.0\ref\task_manager.dll
